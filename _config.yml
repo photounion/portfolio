@@ -7,11 +7,10 @@ google_analytics: "UA-46465113-2"
 
 # UI configs
 title: "@photo_union_kzn"
-subtitle: "See the world through my eyes!"
-author: "Ram Patra"
 header:
  title: "@photo_union_kzn"
  subtitle: "portfolio"
+ about_ph: "О фотографе | Цены"
 footer:
  name: "Hey there, my name is Ram"
  bio: "I am a developer and a tech aficionado from India. Love making teeny tiny apps solving tiny problems in life and now learning photography."

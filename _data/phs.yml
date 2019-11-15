@@ -1,0 +1,12 @@
+katen:
+    permalink: katen
+    name: Екатерина
+    bio: 
+    services:
+        - name: Фотопрогулка
+          time: 1.5-2 часа
+          price: 500 руб
+
+        - name: Ню-фотосессия
+          time: 1 час
+          price: 1000 руб

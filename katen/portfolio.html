@@ -1,8 +1,6 @@
 ---
 layout: default
-permalink: "/katen/"
-ph_name: "Екатерина"
-bio: "Я - Олаф. Люблю жаркие объятья, фотографирую с 7 лет. Пусть жинь твоя будет крутой"
+permalink: "katen"
 ---
 
 <!-- Wrapper -->
@@ -10,10 +8,10 @@ bio: "Я - Олаф. Люблю жаркие объятья, фотографи�
 
     <!-- Header -->
     <header id="header">
-        <h1><a href="{{page.permalink}}"><strong>{{ site.header.title }}</strong> {{ page.ph_name }} - Портфолио</a></h1>
+        <h1><a href="/{{page.permalink}}/"><strong>{{ site.header.title }}</strong></a></h1>
         <nav>
             <ul>
-                <li><a href="#footer" class="icon fa-info-circle">О фотографе | Цены</a></li>
+                <li><a href="#footer" class="icon fa-info-circle">{{site.header.about_ph}}</a></li>
             </ul>
         </nav>
     </header>
@@ -23,8 +21,8 @@ bio: "Я - Олаф. Люблю жаркие объятья, фотографи�
         {% for image in site.static_files %}
         {% if image.path contains 'fulls' and image.path contains page.permalink %}
         <article class="thumb">
-            <a href="{{ site.baseurl }}{{page.permalink}}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                <img src="{{ site.baseurl }}{{page.permalink}}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
+            <a href="{{ site.baseurl }}/{{page.permalink}}/{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
+                <img src="{{ site.baseurl }}/{{page.permalink}}/{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
                      data-name="{{ image.name }}"/></a>
             <!--<h2></h2>
             <p></p>-->
@@ -49,8 +47,31 @@ bio: "Я - Олаф. Люблю жаркие объятья, фотографи�
             </div>
             <div>
                 <section>
-                    <h2>{{ page.ph_name }}</h2>
-                    <p>{{ page.bio }}</p>
+                    <h2>{{ site.data.phs[page.permalink].name }}</h2>
+                    <p>{{ site.data.phs[page.permalink].bio }}</p>
+                </section>
+                <section>
+                    <div class="container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Услуга</th>
+                                    <th>Время</th>
+                                    <th>Цена</th>
+                                </tr>
+                            </thead>
+                    
+                            <tbody>
+                                {% for data in site.data.phs[page.permalink].services %}
+                                        <tr>
+                                            <td>{{data.name}}</td>
+                                            <td>{{data.time}}</td>
+                                            <td>{{data.price}}</td>
+                                        </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>   
+                    </div>         
                 </section>
                 <section>
                     <h2>Подписывайтесь на нас:</h2>
@@ -63,35 +84,6 @@ bio: "Я - Олаф. Люблю жаркие объятья, фотографи�
                             </li>
                         {% endif %}
                     </ul>
-                </section>
-            </div>
-            <div>
-                <section>
-                    <div class="container">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Item Price</th>
-                                </tr>
-                            </thead>
-                    
-                            <tbody>
-                                <tr>
-                                    <td>Alvin</td>
-                                    <td>$0.87</td>
-                                </tr>
-                                <tr>
-                                    <td>Alan</td>
-                                    <td>$3.76</td>
-                                </tr>
-                                <tr>
-                                    <td>Jonathan</td>
-                                    <td>$7.00</td>
-                                </tr>
-                            </tbody>
-                        </table>   
-                    </div>         
                 </section>
             </div>
         </div>
