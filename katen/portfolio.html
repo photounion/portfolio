@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: "katen"
+permalink: "/katen"
 ph_name: "Екатерина"
 bio: "Я - Олаф. Люблю жаркие объятья, фотографирую с 7 лет. Пусть жинь твоя будет крутой"
 ---
@@ -23,8 +23,8 @@ bio: "Я - Олаф. Люблю жаркие объятья, фотографи�
         {% for image in site.static_files %}
         {% if image.path contains 'fulls' and image.path contains page.permalink %}
         <article class="thumb">
-            <a href="{{ site.baseurl }}/{{page.permalink}}/{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                <img src="{{ site.baseurl }}/{{page.permalink}}/{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
+            <a href="{{ site.baseurl }}{{page.permalink}}/{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
+                <img src="{{ site.baseurl }}{{page.permalink}}/{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
                      data-name="{{ image.name }}"/></a>
             <!--<h2></h2>
             <p></p>-->
