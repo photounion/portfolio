@@ -1,6 +1,6 @@
 # Base configs
 # baseurl: "https://photounion.github.io/portfolio"
-baseurl: "portfolio"
+baseurl: "https://photounion.github.io/portfolio"
 image_fulls_loc: "images/fulls"
 image_thumbs_loc: "images/thumbs"
 google_analytics: "UA-46465113-2"
