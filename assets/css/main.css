@@ -993,6 +993,7 @@
 		width: 100%;
 		z-index: 10001;
 		/* overflow: hidden; */
+		overflow-y: auto;
 	}
 
 		.panel.active {
