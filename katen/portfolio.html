@@ -1,0 +1,99 @@
+---
+layout: default
+permalink: "/katen"
+ph_name: "Екатерина"
+bio: "Я - Олаф. Люблю жаркие объятья, фотографирую с 7 лет. Пусть жинь твоя будет крутой"
+---
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="{{page.permalink}}"><strong>{{ site.header.title }}</strong> {{ page.ph_name }} - Портфолио</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#footer" class="icon fa-info-circle">О фотографе | Цены</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+        {% for image in site.static_files %}
+        {% if image.path contains 'fulls' and image.path contains page.permalink %}
+        <article class="thumb">
+            <a href="{{ site.baseurl }}{{page.permalink}}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
+                <img src="{{ site.baseurl }}{{page.permalink}}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""
+                     data-name="{{ image.name }}"/></a>
+            <!--<h2></h2>
+            <p></p>-->
+        </article>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="panel">
+        <div class="inner split">
+            <div class='avatars'>
+                <section>
+                {% for image in site.static_files %}
+                {% if image.path contains page.permalink %}
+                {% unless image.path contains 'images' %}
+                <img src="{{image.path}}" data-name="{{image.name}}">
+                {% endunless %}
+                {% endif %}
+                {% endfor %}
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h2>{{ page.ph_name }}</h2>
+                    <p>{{ page.bio }}</p>
+                </section>
+                <section>
+                    <h2>Подписывайтесь на нас:</h2>
+                    <ul class="icons">
+                        {% if site.social_urls.instagram %}
+                            <li>
+                                <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram">
+                                    <span class="label">Instagram</span>
+                                </a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <!-- <section> -->
+                    <div class="container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Item Price</th>
+                                </tr>
+                            </thead>
+                    
+                            <tbody>
+                                <tr>
+                                    <td>Alvin</td>
+                                    <td>$0.87</td>
+                                </tr>
+                                <tr>
+                                    <td>Alan</td>
+                                    <td>$3.76</td>
+                                </tr>
+                                <tr>
+                                    <td>Jonathan</td>
+                                    <td>$7.00</td>
+                                </tr>
+                            </tbody>
+                        </table>   
+                    </div>         
+                <!-- </section> -->
+            </div>
+        </div>
+    </footer>
+</div>

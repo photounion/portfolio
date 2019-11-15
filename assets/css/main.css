@@ -1,6 +1,8 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
+
+
 /*
 	Multiverse by HTML5 UP
 	html5up.net | @ajlkn
@@ -987,10 +989,10 @@
 		bottom: 4em;
 		left: 0;
 		max-height: calc(80vh - 4em);
-		overflow-y: auto;
 		position: fixed;
 		width: 100%;
 		z-index: 10001;
+		/* overflow: hidden; */
 	}
 
 		.panel.active {
@@ -1004,6 +1006,7 @@
 			margin: 0 auto;
 			max-width: 100%;
 			width: 75em;
+			/* overflow: auto !important; */
 		}
 
 			.panel > .inner.split {

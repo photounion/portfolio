@@ -1,0 +1,51 @@
+.avatars img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container {
+    /* position: absolute; */
+    width: 100% !important;
+	/* transform: translate(-50%, -50%); */
+}
+
+table {
+	width: 100% !important;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	/* padding: 15px; */
+	background-color: rgba(255,255,255,0.01);
+	color: #fff;
+}
+
+th {
+	text-align: left;
+}
+
+thead th {
+    font-weight: bold;
+    padding-top: 10px;
+	background-color: #151515;
+}
+
+
+tbody:hover tr:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+tbody:hover:before td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255,255,255,0.2);
+    z-index: -1;
+}
