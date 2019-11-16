@@ -8,7 +8,7 @@ permalink: "katen"
 
     <!-- Header -->
     <header id="header">
-        <h1><a href="/{{page.permalink}}/"><strong>{{ site.header.title }}</strong></a></h1>
+        <h1><a href="{{ site.social_urls.instagram }}"><strong>{{ site.header.title }}</strong></a></h1>
         <nav>
             <ul>
                 <li><a href="#footer" class="icon fa-info-circle">{{site.header.about_ph}}</a></li>
@@ -74,16 +74,11 @@ permalink: "katen"
                     </div>         
                 </section>
                 <section>
-                    <h2>Чтобы заказать фотосессию, напишите нам в директ Инстаграм:</h2>
-                    <ul class="icons">
-                        {% if site.social_urls.instagram %}
-                            <li>
-                                <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram">
-                                    <span class="label">Instagram</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                    </ul>
+                    <div class="buttons">
+                    {% if site.social_urls.instagram %}
+                        <a class="btn btn-primary" href="{{ site.social_urls.instagram }}" role="button">Заказать фотосессию</a>
+                    {% endif %}
+                    </div>
                 </section>
             </div>
         </div>
