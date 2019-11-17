@@ -28,3 +28,39 @@ aniza:
         - name: Студийные, постановочные
           time: 1 час
           price: 3000 руб
+darius:
+    permalink: darius
+    name: Дарий
+    bio: Фотосессии - мое хобби
+    services:
+        - name: Любой жанр
+          time: 1 час
+          price: 3000 руб
+adelya:
+    permalink: adelya
+    name: Аделя
+    bio: Фотографии, которые радуют всю жизнь
+    services:
+        - name: Съемка
+          time: 1 час
+          price: 2000-3000 руб
+bunina:
+    permalink: bunina
+    name: Екатерина
+    bio: Вхожу в ТОП-13 свадебных фотографов по версии WDay, фотографирую и обучаю
+    services:
+        - name: Индивидуальные, семейные, street, LoveStory
+          time: 1 час
+          price: 4000 руб
+        - name: Новогодняя съемка
+          time: 1 час
+          price: 5000 - 7500 руб
+        - name: Свадебная
+          time: 1 час
+          price: 4000 руб
+        - name: Свадебная
+          time: 5 часов
+          price: 18000 руб
+        - name: Свадебная
+          time: 1 час
+          price: 27000 руб
