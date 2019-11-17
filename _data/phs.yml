@@ -6,3 +6,25 @@ katen:
         - name: Съемочный день
           time: 1.5-2 часа
           price: 500 руб
+dilya:
+    permalink: dilya
+    name: Диля
+    bio: Меня ценят за живые снимки
+    services:
+        - name: Индивидуальные, семейные, LoveStory
+          time: 1 час
+          price: 1500 руб
+        - name: Мероприятия
+          time: 1 час
+          price: 2000 руб
+aniza:
+    permalink: aniza
+    name: Алия
+    bio: Фотографирую счастье. Снимаю семейные фильмы, выписки, крещение, дни рождения, LoveStory. А также, коммерческие проекты, рекламу и тизеры
+    services:
+        - name: Индивидуальные, Семейные, LoveStory, Мероприятия
+          time: 1 час
+          price: 2000 - 3000 руб
+        - name: Студийные, постановочные
+          time: 1 час
+          price: 3000 руб
