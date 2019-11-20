@@ -21,7 +21,7 @@ layout: default
         {% for image in site.static_files %}
         {% if image.path contains 'jpg' or image.path contains 'png'%}
         {% unless image.path contains 'images' %}
-        {% unless image.path contains 'thumb' %}
+        {% unless image.path contains 'full' %}
         <article class="thumb_avs">
             <a href="{{ site.baseurl }}/{{image.basename}}" class="image">
                 <img src="{{ site.baseurl }}{{ image.path }}" data-name="{{ image.name }}">

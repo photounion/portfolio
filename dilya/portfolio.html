@@ -11,7 +11,7 @@ permalink: "dilya"
         <h1><a href="{{ site.social_urls.instagram }}"><strong>{{ site.header.title }}</strong></a></h1>
         <nav>
             <ul>
-                <li><a href="#footer" class="icon fa-info-circle">{{site.header.about_ph}}</a></li>
+                    <li><a href="#footer" class="icon fa-info-circle">{{site.header.about_ph}}</a></li>
             </ul>
         </nav>
     </header>
@@ -36,11 +36,14 @@ permalink: "dilya"
         <div class="inner split">
             <div class='avatars'>
                 <section>
+                    Heeeyy
                 {% for image in site.static_files %}
                 {% if image.path contains page.permalink %}
+                {% if image.path contains 'full' %}
                 {% unless image.path contains 'images' %}
                 <img src="{{ site.baseurl }}{{ image.path }}" data-name="{{ image.name }}">
                 {% endunless %}
+                {% endif %}
                 {% endif %}
                 {% endfor %}
                 </section>
