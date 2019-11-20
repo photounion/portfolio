@@ -1267,7 +1267,7 @@
 		@media screen and (max-width: 736px) {
 
 			.poptrox-popup:before {
-				display: none;
+				/* display: none; */
 			}
 
 			.poptrox-popup .caption {
@@ -1277,6 +1277,7 @@
 			.poptrox-popup .closer,
 			.poptrox-popup .nav-previous,
 			.poptrox-popup .nav-next {
+				opacity: 0.5;
 				/* display: none !important; */
 			}
 
@@ -1477,7 +1478,7 @@
 						}
 
 						#header nav > ul > li a.active {
-							background-color: #242629;
+							background-color: #1A2D38;/*#242629;*/
 						}
 
 	@media screen and (max-width: 736px) {
