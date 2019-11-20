@@ -1277,7 +1277,7 @@
 			.poptrox-popup .closer,
 			.poptrox-popup .nav-previous,
 			.poptrox-popup .nav-next {
-				display: none !important;
+				/* display: none !important; */
 			}
 
 		}
